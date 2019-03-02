@@ -172,13 +172,13 @@ if has('gui_running')
   set regexpengine=1
   syntax enable
 endif
-set background=dark
 set t_Co=256
+set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+colorscheme zenburn
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -359,3 +359,6 @@ let g:remoteSession = ($STY == "")
 if !g:remoteSession
   let g:airline_powerline_fonts=1
 endif
+
+" ================== solarized ===========================
+call togglebg#map("<F5>")
