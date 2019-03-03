@@ -178,7 +178,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme zenburn
+colorscheme solarized
 set guifont=Inconsolata:h15
 set guioptions-=L
 
