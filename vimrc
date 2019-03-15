@@ -56,6 +56,9 @@ set conceallevel=0
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
+" folding
+set foldmethod=manual
+
 " Make Vim handle long lines nicely
 set wrap
 set textwidth=79
