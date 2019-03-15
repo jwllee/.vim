@@ -70,7 +70,6 @@ au BufRead /tmp/mutt-* set tw=72
 set autoindent
 set complete-=i
 set showmatch
-set smarttab
 
 set et
 set tabstop=4
