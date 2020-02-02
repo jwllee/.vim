@@ -267,7 +267,7 @@ au BufNewFile,BufRead *.vim setlocal noet ts=4 sw=4 sts=4
 au BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4
 au BufNewFile,BufRead *.md setlocal spell noet ts=4 sw=4
 au BufNewFile,BufRead *.yml,*.yaml setlocal expandtab ts=2 sw=2
-au BufNewFile,BufRead *.cpp, *.cc setlocal expandtab ts=2 sw=2
+au BufNewFile,BufRead *.cpp,*.cc setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.hpp, *h setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.json setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.jade setlocal expandtab ts=2 sw=2
