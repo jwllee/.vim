@@ -364,3 +364,13 @@ endif
 
 " ================== solarized ===========================
 call togglebg#map("<F5>")
+
+" ================== clang_complete ======================
+" libclang.so is a softlink to the libclang with version number
+" https://fjrg76.wordpress.com/2016/08/16/setting-up-clang_complete-plugin-into-linuxvim/
+let g:clang_library_path='/usr/lib/x86_64-linux-gnu'
+let g:clang_c_options = '-std=gnu11'
+let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
+let g:clang_complete = 1 "automatically selects the fist entry in the popup menu"
+let g:clang_snippets = 1 "do some snippets magic on code placeholders like function argument, template parameters, etc"
+let g:clang_close_preview = 1
