@@ -176,11 +176,12 @@ if has('gui_running')
 endif
 set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+" colorscheme solarized
+colorscheme gruvbox
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -354,7 +355,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " =================== vim-airline ========================
 
-let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 
 " set to use powerline fonts when not in a ssh session
 let g:remoteSession = ($STY == "")
