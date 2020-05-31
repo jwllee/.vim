@@ -219,6 +219,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" tab completion
+" map is the root of all maps, and i prefix specify the mode (insert mode this
+" case) for the mapping
+" imap <Tab> <C-P>
+
 " New escape mapping
 inoremap jk <esc>
 vnoremap jk <esc>
