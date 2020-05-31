@@ -383,3 +383,4 @@ let g:clang_close_preview = 1
 
 " ================== Gutentags ===========================
 set statusline+=%{gutentags#statusline()}
+let g:gutentags_cache_dir='~/tmp/nvim'
