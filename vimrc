@@ -378,3 +378,5 @@ let g:clang_close_preview = 1
 
 " ================== Gutentags ======================
 set statusline+=%{gutentags#statusline()}
+" set the directory to store generated tags
+let g:gutentags_cache_dir = '~/tmp/nvim'
