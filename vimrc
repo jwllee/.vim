@@ -301,7 +301,7 @@ autocmd FileType fstab,systemd set noexpandtab
 autocmd FileType gitconfig,sh,toml set noexpandtab
 
 " python indent
-autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
+autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=88 smarttab expandtab
 
 " toml settings
 au BufRead,BufNewFile MAINTAINERS set ft=toml
