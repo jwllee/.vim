@@ -375,3 +375,6 @@ let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
 let g:clang_complete = 1 "automatically selects the fist entry in the popup menu"
 let g:clang_snippets = 1 "do some snippets magic on code placeholders like function argument, template parameters, etc"
 let g:clang_close_preview = 1
+
+" ================== Gutentags ======================
+set statusline+=%{gutentags#statusline()}
