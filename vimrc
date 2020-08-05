@@ -308,6 +308,9 @@ autocmd FileType gitconfig,sh,toml set noexpandtab
 " python indent
 autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=88 smarttab expandtab
 
+" elixir indent
+autocmd BufNewFile,BufRead *.exs,*.ex setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=88 smarttab expandtab
+
 " toml settings
 au BufRead,BufNewFile MAINTAINERS set ft=toml
 
