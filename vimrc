@@ -309,7 +309,7 @@ autocmd FileType gitconfig,sh,toml set noexpandtab
 autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=88 smarttab expandtab
 
 " elixir indent
-autocmd BufNewFile,BufRead *.exs,*.ex setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=88 smarttab expandtab
+" autocmd BufNewFile,BufRead *.exs,*.ex setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=88 smarttab expandtab
 
 " toml settings
 au BufRead,BufNewFile MAINTAINERS set ft=toml
@@ -383,6 +383,14 @@ let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
 let g:clang_complete = 1 "automatically selects the fist entry in the popup menu"
 let g:clang_snippets = 1 "do some snippets magic on code placeholders like function argument, template parameters, etc"
 let g:clang_close_preview = 1
+
+" ================== vim-elixir ===========================
+" Enable syntax highlighting
+syntax on
+
+" Enables filetype detection, loads ftplugin, and loads indent
+" (Not necessary on nvim and may not be necessary on vim 8.2+)
+filetype plugin indent on
 
 " ================== Gutentags ===========================
 set statusline+=%{gutentags#statusline()}
