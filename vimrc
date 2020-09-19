@@ -388,6 +388,10 @@ let g:clang_close_preview = 1
 " Enable syntax highlighting
 syntax on
 
+" ================== vim-mix-format ===========================
+" automatically format on saving
+let g:mix_format_on_save = 1
+
 " Enables filetype detection, loads ftplugin, and loads indent
 " (Not necessary on nvim and may not be necessary on vim 8.2+)
 filetype plugin indent on

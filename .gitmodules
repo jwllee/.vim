@@ -37,3 +37,6 @@
 [submodule "lib/elixir-ctags"]
 	path = lib/elixir-ctags
 	url = https://github.com/mmorearty/elixir-ctags.git
+[submodule "bundle/vim-mix-format"]
+	path = bundle/vim-mix-format
+	url = git@github.com:mhinz/vim-mix-format.git
