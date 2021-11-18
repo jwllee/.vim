@@ -61,3 +61,58 @@ update-pathogen                Updates pathogen.
 update-plugins                 Updates all plugins.
 update                         Updates pathogen and all plugins.
 ```
+
+### Usage in VSCode
+After installing the vim extension, add the following to ```settings.json```:
+```
+"vim.handleKeys": {
+        "<C-d>": true
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.operatorPendingModeKeyBindings": [],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["L"],
+            "after": ["$"],
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["-"],
+            "after": ["d", "d", "p"]
+        },
+        {
+            "before": ["_"],
+            "after": ["d", "d", "k", "P"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "vim.statusBarColors.replace": "",
+    "vim.statusBarColors.searchinprogressmode": "",
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "vim.commandLineModeKeyBindings": []
+```
